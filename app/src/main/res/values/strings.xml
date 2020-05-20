@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MaterialDesign-Sample</string>
+
+    <string name="bottom_navigation">BottomNavigation</string>
+
+    <string name="bottom_appbar">AppBarLayout + CollapsingToolbarLayout</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_mine">Mine</string>
+</resources>
