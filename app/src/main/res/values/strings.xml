@@ -4,6 +4,7 @@
     <string name="bottom_navigation">BottomNavigation</string>
 
     <string name="bottom_appbar">AppBarLayout + CollapsingToolbarLayout</string>
+    <string name="action_settings">Settings</string>
 
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
