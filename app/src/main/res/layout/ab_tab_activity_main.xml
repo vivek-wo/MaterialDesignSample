@@ -2,8 +2,7 @@
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fitsSystemWindows="true">
+    android:layout_height="match_parent">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -20,36 +19,33 @@
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appbarLayout"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/appbar_height"
-        android:fitsSystemWindows="true">
+        android:layout_height="@dimen/ab_tab_height">
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
-            android:id="@+id/collapsingTbL"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed"
-            app:statusBarScrim="@color/colorPrimary"
-            app:contentScrim="@color/colorPrimary"
-            android:fitsSystemWindows="true"
-            app:collapsedTitleTextAppearance="@style/TextAppearance.AppCompat.Title"
-            app:expandedTitleTextAppearance="@style/TextAppearance.AppCompat.Title"
-            app:title="@string/app_name">
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="fitXY"
-                android:fitsSystemWindows="true"
-                android:src="@drawable/background_image" />
-
-            <androidx.appcompat.widget.Toolbar
+            <Toolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
-                android:layout_height="?actionBarSize"
+                android:layout_height="@dimen/ab_tab_toolbar_height"
                 app:layout_collapseMode="pin" />
 
-        </com.google.android.material.appbar.CollapsingToolbarLayout>
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ab_tab_tablayout_height"
+                app:layout_collapseMode="pin"
+                android:layout_gravity="bottom" />
 
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/searchButton"
+                android:layout_width="@dimen/ab_tab_toolbar_height"
+                android:layout_height="@dimen/ab_tab_toolbar_height"
+                android:layout_gravity="right" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

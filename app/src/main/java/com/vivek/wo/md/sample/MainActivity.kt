@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.vivek.wo.md.sample.appbar.AppBarMainActivity
+import com.vivek.wo.md.sample.appbar.CollapsingTabLayoutActivity
 import com.vivek.wo.md.sample.bottomnavigation.BottonNavigationMainActivity
 
 class MainActivity : AppCompatActivity() {
@@ -20,5 +21,9 @@ class MainActivity : AppCompatActivity() {
 
     fun intentAppBar(view: View) {
         startActivity(Intent(this, AppBarMainActivity::class.java))
+    }
+
+    fun intentAppBarTabLayout(view: View) {
+        startActivity(Intent(this, CollapsingTabLayoutActivity::class.java))
     }
 }

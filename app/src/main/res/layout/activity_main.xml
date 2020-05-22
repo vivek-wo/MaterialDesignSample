@@ -15,6 +15,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+        android:id="@+id/bottom_appbar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/activity_horizontal_margin"
@@ -22,6 +23,16 @@
         android:text="@string/bottom_appbar"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bottom_navigation" />
+
+    <Button
+        android:id="@+id/bottom_appbar_tablayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:onClick="intentAppBarTabLayout"
+        android:text="@string/bottom_appbar_tablayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bottom_appbar" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

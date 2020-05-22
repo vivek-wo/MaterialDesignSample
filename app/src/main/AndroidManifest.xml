@@ -18,9 +18,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".bottomnavigation.BottonNavigationMainActivity"/>
-        <activity android:name=".appbar.AppBarMainActivity"
-            android:theme="@style/NoActionBar"/>
+        <activity android:name=".bottomnavigation.BottonNavigationMainActivity" />
+        <activity
+            android:name=".appbar.AppBarMainActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".appbar.CollapsingTabLayoutActivity"
+            android:theme="@style/NoActionBar" />
     </application>
 
 </manifest>

@@ -3,11 +3,14 @@ package com.vivek.wo.md.sample.appbar
 import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.appbar.AppBarLayout
+import com.google.android.material.appbar.AppBarLayout.OnOffsetChangedListener
 import com.vivek.wo.md.sample.R
 import kotlinx.android.synthetic.main.ab_activity_main.*
 
@@ -18,6 +21,15 @@ class AppBarMainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.ab_activity_main)
         setSupportActionBar(toolbar)
+        appbarLayout.addOnOffsetChangedListener(
+            OnOffsetChangedListener { appbarLayout: AppBarLayout?, i: Int ->
+                Log.w("-----", "--- appbarLayout: ${appbarLayout?.height}")
+                Log.w(
+                    "-----",
+                    "--- collapsingTbL: ${collapsingTbL?.height} , ${appbarLayout?.totalScrollRange}"
+                )
+                Log.w("-----", "--- offset: $i")
+            })
         setTranslucent()
     }
 

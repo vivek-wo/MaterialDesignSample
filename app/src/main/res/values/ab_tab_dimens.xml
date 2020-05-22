@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="ab_tab_toolbar_height">48dp</dimen>
+    <dimen name="ab_tab_tablayout_height">56dp</dimen>
+    <dimen name="ab_tab_height">104dp</dimen>
+</resources>
