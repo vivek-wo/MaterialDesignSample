@@ -4,4 +4,6 @@
     <dimen name="ab_tab_toolbar_height">48dp</dimen>
     <dimen name="ab_tab_tablayout_height">56dp</dimen>
     <dimen name="ab_tab_height">104dp</dimen>
+
+    <dimen name="ab_tab_button_size">28dp</dimen>
 </resources>
